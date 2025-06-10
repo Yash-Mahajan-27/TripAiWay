@@ -70,18 +70,8 @@ tripaiway/
 - [React](https://reactjs.org/) - Frontend framework
 - [Vite](https://vitejs.dev/) - Build tool and development server
 - [Tailwind CSS](https://tailwindcss.com/) - Utility-first CSS framework
-- [Node.js](https://nodejs.org/) - Backend runtime environment
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+- [Node.js](https://nodejs.org/) - Backend runtime environmen
 
 ## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome! Feel free to check the issues page.
-
-## 📧 Contact
-
-Your Name - [your-email@example.com]
-
-Project Link: [https://github.com/yourusername/tripaiway](https://github.com/yourusername/tripaiway) 
