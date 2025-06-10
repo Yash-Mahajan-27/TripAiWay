@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: tripaiway-server
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 3000
+      - key: STRIPE_SECRET_KEY
+        sync: false 
