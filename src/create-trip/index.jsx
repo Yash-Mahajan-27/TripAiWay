@@ -21,8 +21,14 @@ import {
 } from "@/components/ui/dialog"
 
 function CreateTrip() {
-  const [place, setPlace] = useState()
-  const [formData, setFromData] = useState([])
+  const defaultLocation = {
+    label: "Nashik, Maharashtra, India",
+    value: { description: "Nashik, Maharashtra, India" }
+  }
+  const [place, setPlace] = useState(defaultLocation)
+  const [formData, setFromData] = useState({
+    location: defaultLocation.label
+  })
   const [loading, setLoading] = useState(false)
   const [currentStep, setCurrentStep] = useState(1)
   const [openDialog, setOpenDialog] = useState(false)
@@ -165,6 +171,7 @@ function CreateTrip() {
                 apiKey={import.meta.env.VITE_GOOGLE_PLACES_API_KEY}
                 selectProps={{
                   place,
+                  defaultValue: defaultLocation,
                   onChange: (v) => {setPlace(v); handleInputChange('location', v.label)},
                   placeholder: "Search for a destination...",
                   styles: {
